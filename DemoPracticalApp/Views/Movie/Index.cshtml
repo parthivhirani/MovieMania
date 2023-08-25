@@ -1,0 +1,70 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@model IEnumerable<DemoPracticalApp.Models.Movie>
+
+@{
+    ViewData["Title"] = "Index";
+    var defaultImage = "https://moviemaniaimageblob.blob.core.windows.net/moviebanners/card-bg.png";
+    var sasToken = "?sp=r&st=2023-08-22T08:48:27Z&se=2024-08-22T08:48:27Z&spr=https&sv=2022-11-02&sr=c&sig=Dr9Sv7Dtof5Jaq7qDofnwOUMF7SBE%2Fs2JDhOK%2BmLBaA%3D";
+}
+
+<div>
+    @{
+        if(ViewBag.Message == null)
+        {
+        <div class="d-flex justify-content-between">
+                <h1>Trending Movies</h1>
+                @*<input type="text" class="form-control" placeholder="Search movie..." style="width: 300px; height: 35px; align-self:center;" />*@
+        </div>
+        
+        <hr />
+        <br />
+
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    string photoPath = null;
+                    if (item.PhotoPath == "")
+                    {
+                        photoPath = $"{defaultImage}{sasToken}";
+                    }
+                    else
+                    {
+                        photoPath = $"{item.PhotoPath}{sasToken}";
+                    }
+                    <div class="col-md-4 mb-3">
+                        <div class="card rounded-3" style="width: 18rem; height: 25rem;">
+                            <div class="w-100 h-75">
+                                <img src="@photoPath" class="card-img-top" style="width: 100%; height: 100%;" alt="movie poster" asp-append-version="true" />
+                            </div>
+                            <div class="card-body text-center w-100 h-25">
+                                <div class="w-100 h-50" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                    <h3 class="card-title text-secondary">@Html.DisplayFor(modelItem => item.MovieName)</h3>
+                                </div>
+                                @{
+                                    if (HttpContextAccessor?.HttpContext?.Request.Cookies["UserToken"] != null)
+                                    {
+                                        <div class="w-100 h-50">
+                                            <a asp-action="Details" asp-route-itemid="@item.MovieName" asp-controller="Movie" class="btn btn-primary w-75">View Details</a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="w-100 h-50">
+                                            <a asp-action="Details" asp-route-itemid="@item.MovieName" asp-controller="Movie" class="btn btn-primary w-75 disabled">View Details</a>
+                                        </div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        }
+        else
+        {
+        <h1 class="text-danger">@ViewBag.Message</h1>
+        }
+        }
+</div>

@@ -1,0 +1,76 @@
+﻿@model DemoPracticalApp.ViewModels.EditViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    var defaultImage = "https://moviemaniaimageblob.blob.core.windows.net/moviebanners/card-bg.png";
+    var sasToken = "?sp=r&st=2023-08-22T08:48:27Z&se=2024-08-22T08:48:27Z&spr=https&sv=2022-11-02&sr=c&sig=Dr9Sv7Dtof5Jaq7qDofnwOUMF7SBE%2Fs2JDhOK%2BmLBaA%3D";
+
+    string photoPath = null;
+    if (Model.ExistingPhotoPath == "")
+    {
+        photoPath = $"{defaultImage}{sasToken}";
+    }
+    else
+    {
+        photoPath = $"{Model.ExistingPhotoPath}{sasToken}";
+    }
+}
+<link href="~/css/customstyle.css" rel="stylesheet" />
+<h1>Edit Movie</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h5 class="text-danger">@ViewBag.Error</h5>
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="ExistingPhotoPath" />
+            <div class="form-group">
+                <label asp-for="MovieName" class="control-label"></label>
+                <input asp-for="MovieName" class="form-control" />
+                <span asp-validation-for="MovieName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+                <span asp-validation-for="Year" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <input asp-for="Rating" class="form-control" />
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Length" class="control-label"></label>
+                <input asp-for="Length" class="form-control" />
+                <span asp-validation-for="Length" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label"></label>
+                <input asp-for="Genre" class="form-control" />
+                <span asp-validation-for="Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Photo" class="control-label"></label>
+                <input asp-for="Photo" class="form-control" type="file" />
+                <span asp-validation-for="Photo" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <br />
+                <input asp-route-itemid="@Model.MovieName" type="submit" value="Save" class="btn btn-primary" /> |
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div>
+            <br />
+            <img src="@photoPath" class="w-75 h-75 rounded-3" alt="movie-banner" asp-append-version="true" />
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

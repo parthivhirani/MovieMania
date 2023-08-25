@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNetCore.DataProtection;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor;
+@model DemoPracticalApp.Models.Movie
+@inject IDataProtectionProvider roleProtector;
+
+@{
+    ViewData["Title"] = "Details";
+    var defaultImage = "https://moviemaniaimageblob.blob.core.windows.net/moviebanners/card-bg.png";
+    var sasToken = "?sp=r&st=2023-08-22T08:48:27Z&se=2024-08-22T08:48:27Z&spr=https&sv=2022-11-02&sr=c&sig=Dr9Sv7Dtof5Jaq7qDofnwOUMF7SBE%2Fs2JDhOK%2BmLBaA%3D";
+
+    string photoPath = null;
+    if(Model.PhotoPath == "")
+    {
+        photoPath = $"{defaultImage}{sasToken}";
+    }
+    else
+    {
+        photoPath = $"{Model.PhotoPath}{sasToken}";
+    }
+    
+}
+
+<h1>Details</h1>
+<hr />
+<br />
+
+<div class="container">
+    <div class="row">
+        <div>
+            <div class="card m-auto w-25 rounded-3" style="width: 18rem;">
+                <img src="@photoPath" alt="movie poster" asp-append-version="true" />
+                <div class="card-body text-center">
+                    <h3 class="card-title text-secondary">@Html.DisplayFor(model => model.MovieName)</h3>
+                    <h5 class="card-text text-dark">@Html.DisplayNameFor(model => model.Year) - @Html.DisplayFor(model => model.Year)</h5>
+                    <h5 class="card-text text-dark">@Html.DisplayNameFor(model => model.Rating) - @Html.DisplayFor(model => model.Rating) / 10</h5>
+                    <h5 class="card-text text-dark">@Html.DisplayNameFor(model => model.Length) - @Html.DisplayFor(model => model.Length) hr</h5>
+                    <h5 class="card-text text-dark">@Html.DisplayNameFor(model => model.Genre) - @Html.DisplayFor(model => model.Genre)</h5>
+                    <hr />
+                    @if (HttpContextAccessor?.HttpContext?.Request.Cookies["UserToken"] != null)
+                    {
+                        var _roleProtector = roleProtector.CreateProtector("RoleProtector");
+                        var roles = HttpContextAccessor?.HttpContext?.Request.Cookies["UserRole"].Split("=").Last();
+                        if (_roleProtector.Unprotect(HttpContextAccessor?.HttpContext?.Request.Cookies["UserRole"]) == "Admin")
+                        {
+                            <a asp-action="Edit" asp-route-itemid="@Model.MovieName" asp-controller="Movie" class="btn btn-primary">Edit</a>
+                            <a asp-action="Delete" asp-route-itemid="@Model.MovieName" asp-controller="Movie" class="btn btn-danger">Delete</a>
+                            <a asp-action="Index" asp-controller="Movie" class="btn btn-secondary">Back</a>
+                        }
+                        else
+                        {
+                            <a asp-action="Index" asp-controller="Movie" class="btn btn-secondary w-75">Back</a>
+                        }
+                    }else
+                    {
+                        <a asp-action="Index" asp-controller="Movie" class="btn btn-secondary w-75">Back</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
