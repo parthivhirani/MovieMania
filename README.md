@@ -4,9 +4,9 @@
 - Frontend App
 - Unit Testing Project
 
-This project is created in **_.net 7_** 
-To run project first download all three projects.
-Open solution file from the API Project.
+This project is created in **_.net 7_**\
+To run project first download all three projects.\
+Open solution file from the API Project.\
 To setup database follow the below steps:
 - Create **_MovieDB_** database.
 - Change Data Source, User Id and Password to your SQL Server from **_Program.cs_** file of API Project.
