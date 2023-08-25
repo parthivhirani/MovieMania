@@ -1,0 +1,904 @@
+2023-08-08 09:36:33.314 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-08 09:36:34.419 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-08 09:36:34.420 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-08 09:36:34.423 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-08 09:36:34.424 +05:30 [INF] Hosting environment: Development
+2023-08-08 09:36:34.424 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\MovieMania\DemoPractical
+2023-08-08 09:36:35.851 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-08 09:36:36.631 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 780.4882ms
+2023-08-08 09:36:36.815 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-08 09:36:36.815 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-08 09:36:36.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 28.5548ms
+2023-08-08 09:36:36.882 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 67.7142ms
+2023-08-08 09:36:37.060 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-08 09:36:37.192 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 132.2531ms
+2023-08-08 09:36:46.700 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:36:46.771 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:36:46.779 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:36:47.993 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:36:48.046 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:36:48.051 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:36:48.073 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 1290.4556ms
+2023-08-08 09:36:48.074 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:36:48.076 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 1370.2793 ms
+2023-08-08 09:36:48.083 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 1383.0290ms
+2023-08-08 09:36:53.351 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:36:53.354 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:36:53.355 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:36:53.369 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:36:53.371 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:36:53.372 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:36:53.374 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 17.3856ms
+2023-08-08 09:36:53.375 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:36:53.375 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 22.1172 ms
+2023-08-08 09:36:53.377 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 25.9165ms
+2023-08-08 09:36:56.693 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:36:56.697 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:36:56.698 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:36:56.747 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:36:56.749 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:36:56.749 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:36:56.750 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 50.8379ms
+2023-08-08 09:36:56.751 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:36:56.751 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 56.6165 ms
+2023-08-08 09:36:56.752 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 59.2131ms
+2023-08-08 09:37:10.633 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 -
+2023-08-08 09:37:10.637 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-08 09:37:10.645 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(DemoPractical.ViewModels.LoginViewModel) on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-08 09:37:10.787 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-08-08 09:37:10.954 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-08 09:37:10.981 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-08 09:37:10.988 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-08 09:37:10.996 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-08 09:37:11.013 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-08 09:37:11.024 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-08-08 09:37:11.025 +05:30 [INF] User logged in successfully
+2023-08-08 09:37:11.111 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-08-08 09:37:11.119 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Login (DemoPractical) in 473.2526ms
+2023-08-08 09:37:11.120 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-08 09:37:11.122 +05:30 [INF] HTTP POST /api/Account/Login responded 200 in 484.8040 ms
+2023-08-08 09:37:11.124 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 491.1748ms
+2023-08-08 09:37:11.164 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:37:11.164 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:11.165 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:11.167 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:37:11.168 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:37:11.169 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:37:11.170 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.207ms
+2023-08-08 09:37:11.170 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:11.171 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.3141 ms
+2023-08-08 09:37:11.172 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.3252ms
+2023-08-08 09:37:15.176 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 09:37:15.178 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:15.180 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:15.192 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:37:15.193 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 09:37:15.194 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 09:37:15.194 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 13.426ms
+2023-08-08 09:37:15.195 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:15.196 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 18.2474 ms
+2023-08-08 09:37:15.197 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 20.6582ms
+2023-08-08 09:37:17.264 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:37:17.265 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:17.265 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:17.267 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:37:17.268 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:37:17.269 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:37:17.270 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.7591ms
+2023-08-08 09:37:17.271 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:17.271 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.5872 ms
+2023-08-08 09:37:17.273 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.5481ms
+2023-08-08 09:37:18.479 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - -
+2023-08-08 09:37:18.481 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:18.482 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:18.487 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:37:18.489 +05:30 [INF] User retrieved The Lunchbox movie's details
+2023-08-08 09:37:18.490 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 09:37:18.491 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 6.7585ms
+2023-08-08 09:37:18.492 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:18.493 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 11.9172 ms
+2023-08-08 09:37:18.495 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - - - 200 - application/json;+charset=utf-8 16.1772ms
+2023-08-08 09:37:20.127 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:37:20.128 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:20.129 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:20.130 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:37:20.132 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:37:20.132 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:37:20.133 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.5422ms
+2023-08-08 09:37:20.134 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:20.134 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.5634 ms
+2023-08-08 09:37:20.136 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.5608ms
+2023-08-08 09:37:24.342 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:37:24.343 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:24.344 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:24.346 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:37:24.348 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:37:24.349 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:37:24.350 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 4.8713ms
+2023-08-08 09:37:24.350 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:24.351 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 8.0221 ms
+2023-08-08 09:37:24.352 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 10.4243ms
+2023-08-08 09:37:28.991 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0
+2023-08-08 09:37:28.993 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-08 09:37:28.995 +05:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-08 09:37:29.003 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-08-08 09:37:29.005 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-08 09:37:29.005 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-08-08 09:37:29.006 +05:30 [INF] User logged out successfully
+2023-08-08 09:37:29.006 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-08-08 09:37:29.007 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Logout (DemoPractical) in 10.8902ms
+2023-08-08 09:37:29.008 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-08 09:37:29.008 +05:30 [INF] HTTP POST /api/Account/Logout responded 200 in 15.8717 ms
+2023-08-08 09:37:29.009 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0 - 200 - text/plain;+charset=utf-8 18.6553ms
+2023-08-08 09:37:42.000 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 -
+2023-08-08 09:37:42.000 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-08 09:37:42.001 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(DemoPractical.ViewModels.LoginViewModel) on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-08 09:37:42.017 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-08-08 09:37:42.089 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-08 09:37:42.094 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-08 09:37:42.097 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-08 09:37:42.101 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-08 09:37:42.104 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-08 09:37:42.106 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-08-08 09:37:42.107 +05:30 [INF] User logged in successfully
+2023-08-08 09:37:42.108 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-08-08 09:37:42.110 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Login (DemoPractical) in 107.7328ms
+2023-08-08 09:37:42.110 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-08 09:37:42.111 +05:30 [INF] HTTP POST /api/Account/Login responded 200 in 110.7310 ms
+2023-08-08 09:37:42.112 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 112.5686ms
+2023-08-08 09:37:42.121 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:37:42.122 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:42.123 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:42.126 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:37:42.127 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:37:42.128 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:37:42.128 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 4.0925ms
+2023-08-08 09:37:42.129 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:37:42.130 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 7.9581 ms
+2023-08-08 09:37:42.131 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 9.6975ms
+2023-08-08 09:37:44.205 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 09:37:44.207 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:44.209 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:44.212 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:37:44.214 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 09:37:44.214 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 09:37:44.215 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 5.5804ms
+2023-08-08 09:37:44.216 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:44.217 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 10.2422 ms
+2023-08-08 09:37:44.218 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 12.2611ms
+2023-08-08 09:37:46.198 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 09:37:46.233 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:46.234 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:46.236 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:37:46.238 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 09:37:46.238 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 09:37:46.239 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.2134ms
+2023-08-08 09:37:46.240 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:46.241 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 41.4557 ms
+2023-08-08 09:37:46.242 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 43.6687ms
+2023-08-08 09:37:53.127 +05:30 [INF] Request starting HTTP/1.1 PUT https://localhost:7293/api/1.0/Movie/EditMovie?name=3%20Idiots application/json;+charset=utf-8 -
+2023-08-08 09:37:53.133 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.EditMovie (DemoPractical)'
+2023-08-08 09:37:53.135 +05:30 [INF] Route matched with {action = "EditMovie", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditMovie(System.String, DemoPractical.Models.Movie) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:53.182 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:37:53.237 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Movies] SET [Length] = @p0
+OUTPUT 1
+WHERE [MovieId] = @p1;
+2023-08-08 09:37:53.245 +05:30 [INF] Movie edited successfully
+2023-08-08 09:37:53.247 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-08-08 09:37:53.248 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.EditMovie (DemoPractical) in 112.5277ms
+2023-08-08 09:37:53.249 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.EditMovie (DemoPractical)'
+2023-08-08 09:37:53.249 +05:30 [INF] HTTP PUT /api/1.0/Movie/EditMovie responded 200 in 121.3432 ms
+2023-08-08 09:37:53.250 +05:30 [INF] Request finished HTTP/1.1 PUT https://localhost:7293/api/1.0/Movie/EditMovie?name=3%20Idiots application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 123.3558ms
+2023-08-08 09:37:53.260 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 09:37:53.261 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:53.261 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:53.263 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:37:53.264 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 09:37:53.265 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 09:37:53.265 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.2425ms
+2023-08-08 09:37:53.266 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:53.267 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 5.9834 ms
+2023-08-08 09:37:53.268 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 7.7121ms
+2023-08-08 09:37:57.556 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 09:37:57.559 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:57.559 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:37:57.562 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:37:57.563 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 09:37:57.563 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 09:37:57.565 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 4.3025ms
+2023-08-08 09:37:57.567 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:37:57.567 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 9.3531 ms
+2023-08-08 09:37:57.569 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 12.6248ms
+2023-08-08 09:38:01.101 +05:30 [INF] Request starting HTTP/1.1 PUT https://localhost:7293/api/1.0/Movie/EditMovie?name=3%20Idiots application/json;+charset=utf-8 -
+2023-08-08 09:38:01.104 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.EditMovie (DemoPractical)'
+2023-08-08 09:38:01.104 +05:30 [INF] Route matched with {action = "EditMovie", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditMovie(System.String, DemoPractical.Models.Movie) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:38:01.108 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:38:01.111 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Movies] SET [Length] = @p0
+OUTPUT 1
+WHERE [MovieId] = @p1;
+2023-08-08 09:38:01.112 +05:30 [INF] Movie edited successfully
+2023-08-08 09:38:01.113 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-08-08 09:38:01.114 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.EditMovie (DemoPractical) in 8.4336ms
+2023-08-08 09:38:01.114 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.EditMovie (DemoPractical)'
+2023-08-08 09:38:01.115 +05:30 [INF] HTTP PUT /api/1.0/Movie/EditMovie responded 200 in 13.0385 ms
+2023-08-08 09:38:01.116 +05:30 [INF] Request finished HTTP/1.1 PUT https://localhost:7293/api/1.0/Movie/EditMovie?name=3%20Idiots application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 15.0521ms
+2023-08-08 09:38:01.126 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 09:38:01.127 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:38:01.128 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:38:01.130 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 09:38:01.131 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 09:38:01.131 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 09:38:01.132 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.3669ms
+2023-08-08 09:38:01.133 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 09:38:01.134 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 6.8257 ms
+2023-08-08 09:38:01.135 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 8.8804ms
+2023-08-08 09:38:04.168 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 09:38:04.169 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:38:04.169 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 09:38:04.171 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 09:38:04.172 +05:30 [INF] User retrieved all movies details
+2023-08-08 09:38:04.172 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 09:38:04.174 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.5565ms
+2023-08-08 09:38:04.176 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 09:38:04.178 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 9.3457 ms
+2023-08-08 09:38:04.180 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 11.7195ms
+2023-08-08 09:38:20.195 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0
+2023-08-08 09:38:20.195 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-08 09:38:20.196 +05:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-08 09:38:20.198 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-08-08 09:38:20.198 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-08 09:38:20.199 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-08-08 09:38:20.200 +05:30 [INF] User logged out successfully
+2023-08-08 09:38:20.200 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-08-08 09:38:20.201 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Logout (DemoPractical) in 4.0351ms
+2023-08-08 09:38:20.202 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-08 09:38:20.204 +05:30 [INF] HTTP POST /api/Account/Logout responded 200 in 8.0800 ms
+2023-08-08 09:38:20.205 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0 - 200 - text/plain;+charset=utf-8 9.8756ms
+2023-08-08 18:39:19.439 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-08 18:39:19.728 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-08 18:39:19.734 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-08 18:39:19.735 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-08 18:39:19.736 +05:30 [INF] Hosting environment: Development
+2023-08-08 18:39:19.737 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\MovieMania\DemoPractical
+2023-08-08 18:39:23.424 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-08 18:39:24.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 984.5574ms
+2023-08-08 18:39:24.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-08 18:39:24.443 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-08 18:39:24.462 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 18.4900ms
+2023-08-08 18:39:24.505 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.9945ms
+2023-08-08 18:39:24.698 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-08 18:39:24.858 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 160.4320ms
+2023-08-08 18:39:34.823 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 -
+2023-08-08 18:39:34.887 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-08 18:39:34.906 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(DemoPractical.ViewModels.LoginViewModel) on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-08 18:39:35.996 +05:30 [INF] Executed DbCommand (42ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-08-08 18:39:36.204 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-08 18:39:36.230 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-08 18:39:36.238 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-08 18:39:36.246 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-08 18:39:36.264 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-08 18:39:36.275 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-08-08 18:39:36.276 +05:30 [INF] User logged in successfully
+2023-08-08 18:39:36.366 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-08-08 18:39:36.383 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Login (DemoPractical) in 1473.0806ms
+2023-08-08 18:39:36.384 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-08 18:39:36.387 +05:30 [INF] HTTP POST /api/Account/Login responded 200 in 1548.4481 ms
+2023-08-08 18:39:36.394 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 1571.0056ms
+2023-08-08 18:39:36.444 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:39:36.449 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:39:36.452 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:39:36.503 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:39:36.521 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:39:36.523 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:39:36.531 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 78.2266ms
+2023-08-08 18:39:36.533 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:39:36.534 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 87.0547 ms
+2023-08-08 18:39:36.536 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 92.1061ms
+2023-08-08 18:39:39.166 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:39:39.170 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:39:39.172 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:39:39.192 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:39:39.194 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:39:39.195 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:39:39.196 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 23.169ms
+2023-08-08 18:39:39.197 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:39:39.198 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 28.8463 ms
+2023-08-08 18:39:39.200 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 33.2921ms
+2023-08-08 18:39:41.578 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:39:41.616 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:39:41.618 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:39:41.622 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:39:41.623 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:39:41.624 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:39:41.624 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 5.7647ms
+2023-08-08 18:39:41.625 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:39:41.626 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 43.7755 ms
+2023-08-08 18:39:41.627 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 48.2400ms
+2023-08-08 18:40:30.112 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:40:30.114 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:40:30.115 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:30.119 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:40:30.120 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:40:30.121 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:40:30.122 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 6.0763ms
+2023-08-08 18:40:30.127 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:40:30.128 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 14.1899 ms
+2023-08-08 18:40:30.129 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 16.7938ms
+2023-08-08 18:40:32.142 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:40:32.143 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:32.143 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:32.147 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:40:32.150 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:40:32.150 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:40:32.151 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 6.9861ms
+2023-08-08 18:40:32.152 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:32.152 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 9.7395 ms
+2023-08-08 18:40:32.153 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 11.6909ms
+2023-08-08 18:40:34.537 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:40:34.539 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:34.540 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:34.542 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:40:34.544 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:40:34.544 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:40:34.545 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.7387ms
+2023-08-08 18:40:34.545 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:34.546 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 7.8271 ms
+2023-08-08 18:40:34.547 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 9.9310ms
+2023-08-08 18:40:37.153 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:40:37.154 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:40:37.155 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:37.157 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:40:37.159 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:40:37.159 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:40:37.160 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 4.097ms
+2023-08-08 18:40:37.161 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:40:37.161 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 7.1360 ms
+2023-08-08 18:40:37.162 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 9.6233ms
+2023-08-08 18:40:38.721 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:40:38.722 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:38.723 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:38.725 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:40:38.727 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:40:38.727 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:40:38.728 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 4.4028ms
+2023-08-08 18:40:38.729 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:38.729 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 7.5144 ms
+2023-08-08 18:40:38.731 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 9.6767ms
+2023-08-08 18:40:41.346 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:40:41.348 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:41.349 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:41.351 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:40:41.352 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:40:41.353 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:40:41.354 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 4.047ms
+2023-08-08 18:40:41.355 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:41.356 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 9.0910 ms
+2023-08-08 18:40:41.357 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 11.1448ms
+2023-08-08 18:40:48.001 +05:30 [INF] Request starting HTTP/1.1 PUT https://localhost:7293/api/1.0/Movie/EditMovie?name=3%20Idiots application/json;+charset=utf-8 -
+2023-08-08 18:40:48.006 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.EditMovie (DemoPractical)'
+2023-08-08 18:40:48.008 +05:30 [INF] Route matched with {action = "EditMovie", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditMovie(System.String, DemoPractical.Models.Movie) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:48.072 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-08-08 18:40:48.076 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.EditMovie (DemoPractical) in 67.324ms
+2023-08-08 18:40:48.077 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.EditMovie (DemoPractical)'
+2023-08-08 18:40:48.078 +05:30 [INF] HTTP PUT /api/1.0/Movie/EditMovie responded 400 in 75.9891 ms
+2023-08-08 18:40:48.079 +05:30 [INF] Request finished HTTP/1.1 PUT https://localhost:7293/api/1.0/Movie/EditMovie?name=3%20Idiots application/json;+charset=utf-8 - - 400 - application/problem+json;+charset=utf-8 78.2229ms
+2023-08-08 18:40:52.824 +05:30 [INF] Request starting HTTP/1.1 PUT https://localhost:7293/api/1.0/Movie/EditMovie?name=3%20Idiots application/json;+charset=utf-8 -
+2023-08-08 18:40:52.826 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.EditMovie (DemoPractical)'
+2023-08-08 18:40:52.827 +05:30 [INF] Route matched with {action = "EditMovie", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EditMovie(System.String, DemoPractical.Models.Movie) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:52.837 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:40:52.854 +05:30 [INF] Movie edited successfully
+2023-08-08 18:40:52.854 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-08-08 18:40:52.856 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.EditMovie (DemoPractical) in 28.3341ms
+2023-08-08 18:40:52.857 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.EditMovie (DemoPractical)'
+2023-08-08 18:40:52.857 +05:30 [INF] HTTP PUT /api/1.0/Movie/EditMovie responded 200 in 32.6948 ms
+2023-08-08 18:40:52.858 +05:30 [INF] Request finished HTTP/1.1 PUT https://localhost:7293/api/1.0/Movie/EditMovie?name=3%20Idiots application/json;+charset=utf-8 - - 200 - text/plain;+charset=utf-8 34.7854ms
+2023-08-08 18:40:52.869 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:40:52.870 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:52.870 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:52.872 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:40:52.874 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:40:52.874 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:40:52.875 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.5498ms
+2023-08-08 18:40:52.875 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:52.876 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 6.3248 ms
+2023-08-08 18:40:52.877 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 8.2599ms
+2023-08-08 18:40:55.800 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:40:55.802 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:55.802 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:55.807 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:40:55.808 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:40:55.809 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:40:55.810 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 6.5126ms
+2023-08-08 18:40:55.810 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:40:55.811 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 9.6102 ms
+2023-08-08 18:40:55.812 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 11.3912ms
+2023-08-08 18:40:59.258 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:40:59.259 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:40:59.260 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:40:59.262 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:40:59.263 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:40:59.264 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:40:59.265 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 4.0255ms
+2023-08-08 18:40:59.266 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:40:59.266 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 7.3036 ms
+2023-08-08 18:40:59.268 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 9.2577ms
+2023-08-08 18:41:01.249 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - -
+2023-08-08 18:41:01.251 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:01.252 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:01.254 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:41:01.256 +05:30 [INF] User retrieved The Lunchbox movie's details
+2023-08-08 18:41:01.256 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:41:01.257 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 4.3925ms
+2023-08-08 18:41:01.258 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:01.258 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 7.8080 ms
+2023-08-08 18:41:01.260 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - - - 200 - application/json;+charset=utf-8 10.4915ms
+2023-08-08 18:41:03.257 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - -
+2023-08-08 18:41:03.258 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:03.259 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:03.261 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:41:03.262 +05:30 [INF] User retrieved The Lunchbox movie's details
+2023-08-08 18:41:03.262 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:41:03.263 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.3339ms
+2023-08-08 18:41:03.264 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:03.265 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 6.8450 ms
+2023-08-08 18:41:03.268 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - - - 200 - application/json;+charset=utf-8 10.6512ms
+2023-08-08 18:41:05.234 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:05.235 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:05.235 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:05.237 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:05.239 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:05.239 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:05.240 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.4783ms
+2023-08-08 18:41:05.241 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:05.241 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.6003 ms
+2023-08-08 18:41:05.242 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.5362ms
+2023-08-08 18:41:06.748 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:41:06.749 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:06.750 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:06.752 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:41:06.753 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:41:06.754 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:41:06.754 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.5413ms
+2023-08-08 18:41:06.755 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:06.756 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 7.1723 ms
+2023-08-08 18:41:06.757 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 9.5006ms
+2023-08-08 18:41:08.092 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:41:08.094 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:08.094 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:08.097 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:41:08.099 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:41:08.100 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:41:08.101 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 5.6369ms
+2023-08-08 18:41:08.102 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:08.103 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 9.2575 ms
+2023-08-08 18:41:08.104 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 11.2440ms
+2023-08-08 18:41:11.771 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:11.771 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:11.772 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:11.774 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:11.775 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:11.775 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:11.776 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.0659ms
+2023-08-08 18:41:11.777 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:11.778 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.5057 ms
+2023-08-08 18:41:11.779 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.3066ms
+2023-08-08 18:41:14.850 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:14.850 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:14.851 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:14.853 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:14.854 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:14.854 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:14.855 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.0685ms
+2023-08-08 18:41:14.856 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:14.857 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.9189 ms
+2023-08-08 18:41:14.858 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.6974ms
+2023-08-08 18:41:22.438 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:22.439 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:22.439 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:22.441 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:22.442 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:22.443 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:22.443 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.2816ms
+2023-08-08 18:41:22.444 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:22.445 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.0531 ms
+2023-08-08 18:41:22.446 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 7.7442ms
+2023-08-08 18:41:25.346 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - -
+2023-08-08 18:41:25.347 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:25.348 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:25.351 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:41:25.352 +05:30 [INF] User retrieved The Lunchbox movie's details
+2023-08-08 18:41:25.353 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:41:25.353 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 4.0198ms
+2023-08-08 18:41:25.354 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:25.355 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 8.1117 ms
+2023-08-08 18:41:25.356 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - - - 200 - application/json;+charset=utf-8 10.2085ms
+2023-08-08 18:41:28.822 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:28.823 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:28.824 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:28.825 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:28.827 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:28.827 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:28.828 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.0738ms
+2023-08-08 18:41:28.828 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:28.829 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.0471 ms
+2023-08-08 18:41:28.830 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.0398ms
+2023-08-08 18:41:40.275 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Top%20Gun:%20Maverick - -
+2023-08-08 18:41:40.276 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:40.277 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:40.279 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:41:40.281 +05:30 [INF] User retrieved Top Gun: Maverick movie's details
+2023-08-08 18:41:40.281 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:41:40.282 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 4.432ms
+2023-08-08 18:41:40.283 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:40.284 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 7.8131 ms
+2023-08-08 18:41:40.285 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Top%20Gun:%20Maverick - - - 200 - application/json;+charset=utf-8 9.9741ms
+2023-08-08 18:41:43.147 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:43.148 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:43.149 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:43.153 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:43.154 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:43.154 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:43.155 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.7421ms
+2023-08-08 18:41:43.156 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:43.157 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 8.7906 ms
+2023-08-08 18:41:43.158 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 10.6810ms
+2023-08-08 18:41:45.161 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0
+2023-08-08 18:41:45.164 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-08 18:41:45.168 +05:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-08 18:41:45.177 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-08-08 18:41:45.179 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-08 18:41:45.179 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-08-08 18:41:45.180 +05:30 [INF] User logged out successfully
+2023-08-08 18:41:45.180 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-08-08 18:41:45.181 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Logout (DemoPractical) in 11.817ms
+2023-08-08 18:41:45.181 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-08 18:41:45.182 +05:30 [INF] HTTP POST /api/Account/Logout responded 200 in 18.4831 ms
+2023-08-08 18:41:45.183 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0 - 200 - text/plain;+charset=utf-8 21.6818ms
+2023-08-08 18:41:50.039 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 -
+2023-08-08 18:41:50.040 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-08 18:41:50.041 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(DemoPractical.ViewModels.LoginViewModel) on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-08 18:41:50.056 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-08-08 18:41:50.132 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-08 18:41:50.137 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-08 18:41:50.139 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-08 18:41:50.143 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-08 18:41:50.147 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-08 18:41:50.149 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-08-08 18:41:50.150 +05:30 [INF] User logged in successfully
+2023-08-08 18:41:50.151 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-08-08 18:41:50.152 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Login (DemoPractical) in 110.5515ms
+2023-08-08 18:41:50.153 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-08 18:41:50.154 +05:30 [INF] HTTP POST /api/Account/Login responded 200 in 113.5526 ms
+2023-08-08 18:41:50.155 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 115.9876ms
+2023-08-08 18:41:50.167 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:50.168 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:50.169 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:50.170 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:50.172 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:50.172 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:50.173 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.0069ms
+2023-08-08 18:41:50.173 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:50.175 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 7.0225 ms
+2023-08-08 18:41:50.176 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 9.2096ms
+2023-08-08 18:41:53.899 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:41:53.903 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:53.904 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:53.908 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:41:53.910 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:41:53.910 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:41:53.911 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.4842ms
+2023-08-08 18:41:53.912 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:53.913 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 9.5685 ms
+2023-08-08 18:41:53.914 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 14.7828ms
+2023-08-08 18:41:55.763 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:55.764 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:55.765 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:55.767 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:55.769 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:55.770 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:55.771 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 5.1358ms
+2023-08-08 18:41:55.772 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:55.772 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 8.3188 ms
+2023-08-08 18:41:55.773 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 10.1293ms
+2023-08-08 18:41:57.446 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - -
+2023-08-08 18:41:57.447 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:57.448 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:57.455 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:41:57.456 +05:30 [INF] User retrieved The Lunchbox movie's details
+2023-08-08 18:41:57.457 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:41:57.458 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 7.9787ms
+2023-08-08 18:41:57.459 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:41:57.460 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 12.5837 ms
+2023-08-08 18:41:57.461 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=The%20Lunchbox - - - 200 - application/json;+charset=utf-8 15.0347ms
+2023-08-08 18:41:59.109 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:41:59.110 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:59.111 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:41:59.114 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:41:59.116 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:41:59.117 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:41:59.118 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 6.3769ms
+2023-08-08 18:41:59.119 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:41:59.120 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 9.6869 ms
+2023-08-08 18:41:59.121 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 11.7389ms
+2023-08-08 18:42:03.969 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Meg%202:%20The%20Trench - -
+2023-08-08 18:42:03.970 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:42:03.971 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:42:03.975 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:42:03.976 +05:30 [INF] User retrieved Meg 2: The Trench movie's details
+2023-08-08 18:42:03.977 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:42:03.978 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 5.9128ms
+2023-08-08 18:42:03.978 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:42:03.979 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 8.7793 ms
+2023-08-08 18:42:03.980 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Meg%202:%20The%20Trench - - - 200 - application/json;+charset=utf-8 11.0585ms
+2023-08-08 18:42:06.970 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:42:06.971 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:42:06.972 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:42:06.974 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:42:06.975 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:42:06.976 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:42:06.977 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.9287ms
+2023-08-08 18:42:06.977 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:42:06.978 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.9411 ms
+2023-08-08 18:42:06.979 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.8561ms
+2023-08-08 18:42:09.197 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0
+2023-08-08 18:42:09.198 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-08 18:42:09.198 +05:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-08 18:42:09.203 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-08-08 18:42:09.204 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-08 18:42:09.204 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-08-08 18:42:09.205 +05:30 [INF] User logged out successfully
+2023-08-08 18:42:09.205 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-08-08 18:42:09.206 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Logout (DemoPractical) in 5.8125ms
+2023-08-08 18:42:09.207 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-08 18:42:09.207 +05:30 [INF] HTTP POST /api/Account/Logout responded 200 in 9.4829 ms
+2023-08-08 18:42:09.208 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0 - 200 - text/plain;+charset=utf-8 11.1711ms
+2023-08-08 18:42:11.602 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:42:11.603 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:42:11.604 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:42:11.605 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:42:11.606 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:42:11.607 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:42:11.607 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 2.8428ms
+2023-08-08 18:42:11.608 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:42:11.609 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.2034 ms
+2023-08-08 18:42:11.610 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.0095ms
+2023-08-08 18:42:31.349 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-08 18:42:31.351 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:42:31.352 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:42:31.355 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-08 18:42:31.356 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-08 18:42:31.356 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-08 18:42:31.357 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 3.3819ms
+2023-08-08 18:42:31.358 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-08 18:42:31.358 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 7.9100 ms
+2023-08-08 18:42:31.359 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 10.3357ms
+2023-08-08 18:42:38.254 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-08 18:42:38.255 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:42:38.256 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-08 18:42:38.257 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-08 18:42:38.259 +05:30 [INF] User retrieved all movies details
+2023-08-08 18:42:38.259 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-08 18:42:38.260 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.2972ms
+2023-08-08 18:42:38.261 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-08 18:42:38.261 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 6.2824 ms
+2023-08-08 18:42:38.262 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 8.1869ms

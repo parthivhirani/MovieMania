@@ -1,0 +1,23 @@
+h
+_C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Controllers\AccountController.csutf-8f
+]C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Controllers\MovieController.csutf-8^
+UC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Data\MovieDBContext.csutf-8g
+^C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Migrations\20230727050001_v1.csutf-8r
+gC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Migrations\20230727050001_v1.Designer.csutf-8g
+^C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Migrations\20230727061140_v2.csutf-8r
+gC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Migrations\20230727061140_v2.Designer.csutf-8g
+^C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Migrations\20230727062726_v3.csutf-8r
+gC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Migrations\20230727062726_v3.Designer.csutf-8s
+hC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Migrations\MovieDBContextModelSnapshot.csutf-8W
+NC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Models\Movie.csutf-8R
+IC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Program.csutf-8f
+]C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Repository\IMovieRepository.csutf-8e
+\C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Repository\MovieRepository.csutf-8e
+\C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Validations\MovieValidator.csutf-8d
+[C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\Validations\UserValidator.csutf-8d
+[C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\ViewModels\LoginViewModel.csutf-8g
+^C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\ViewModels\RegisterViewModel.csutf-8z
+oC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\obj\Debug\net7.0\DemoPractical.GlobalUsings.g.csutf-8‰
+~C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.csutf-8x
+mC:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\obj\Debug\net7.0\DemoPractical.AssemblyInfo.csutf-8Œ
+€C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical\obj\Debug\net7.0\DemoPractical.MvcApplicationPartsAssemblyInfo.csutf-8

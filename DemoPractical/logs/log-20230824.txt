@@ -1,0 +1,14 @@
+2023-08-24 09:54:35.567 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-24 09:54:35.944 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-24 09:54:35.946 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-24 09:54:35.948 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-24 09:54:35.950 +05:30 [INF] Hosting environment: Development
+2023-08-24 09:54:35.950 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\MovieMania\DemoPractical
+2023-08-24 09:54:37.528 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-24 09:54:37.821 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-24 09:54:37.821 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-24 09:54:37.835 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 301.2235ms
+2023-08-24 09:54:37.852 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 30.9194ms
+2023-08-24 09:54:38.012 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 191.2512ms
+2023-08-24 09:54:38.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-24 09:54:38.187 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 119.9998ms

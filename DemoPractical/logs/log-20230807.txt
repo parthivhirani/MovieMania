@@ -1,0 +1,361 @@
+2023-08-07 10:36:04.084 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-07 10:36:04.431 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-07 10:36:04.433 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-07 10:36:04.436 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-07 10:36:04.437 +05:30 [INF] Hosting environment: Development
+2023-08-07 10:36:04.438 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical
+2023-08-07 10:36:07.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-07 10:36:07.556 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 282.2706ms
+2023-08-07 10:36:07.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-07 10:36:07.741 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-07 10:36:07.769 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 27.6723ms
+2023-08-07 10:36:07.801 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.6124ms
+2023-08-07 10:36:07.871 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-07 10:36:08.007 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 136.1224ms
+2023-08-07 10:48:34.649 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-07 10:48:35.028 +05:30 [FTL] Application startup exception
+System.InvalidOperationException: Unable to resolve service for type 'System.Func`1[Sentry.IHub]' while attempting to activate 'Sentry.AspNetCore.SentryTracingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass5_0.<UseMiddleware>b__0(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2023-08-07 10:49:35.640 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-07 10:49:35.914 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-07 10:49:35.916 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-07 10:49:35.918 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-07 10:49:35.919 +05:30 [INF] Hosting environment: Development
+2023-08-07 10:49:35.920 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical
+2023-08-07 10:49:37.390 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-07 10:49:37.832 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-07 10:49:37.833 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 447.2928ms
+2023-08-07 10:49:37.832 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-07 10:49:37.869 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 35.8328ms
+2023-08-07 10:49:37.924 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 93.3204ms
+2023-08-07 10:49:38.070 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-07 10:49:38.373 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 302.2073ms
+2023-08-07 10:49:45.120 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 -
+2023-08-07 10:49:45.197 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-07 10:49:45.214 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(DemoPractical.ViewModels.LoginViewModel) on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-07 10:49:46.479 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-08-07 10:49:46.684 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-07 10:49:46.710 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-07 10:49:46.718 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-07 10:49:46.728 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-08-07 10:49:46.750 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-07 10:49:46.762 +05:30 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-08-07 10:49:46.763 +05:30 [INF] User logged in successfully
+2023-08-07 10:49:46.859 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-08-07 10:49:46.876 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Login (DemoPractical) in 1657.8926ms
+2023-08-07 10:49:46.879 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Login (DemoPractical)'
+2023-08-07 10:49:46.882 +05:30 [INF] HTTP POST /api/Account/Login responded 200 in 1746.0984 ms
+2023-08-07 10:49:46.890 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Login application/json;+charset=utf-8 - - 200 - application/json;+charset=utf-8 1769.9258ms
+2023-08-07 10:49:46.938 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-07 10:49:46.944 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 10:49:46.946 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 10:49:46.994 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-07 10:49:47.013 +05:30 [INF] User retrieved all movies details
+2023-08-07 10:49:47.014 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-07 10:49:47.021 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 74.7043ms
+2023-08-07 10:49:47.023 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 10:49:47.024 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 81.6560 ms
+2023-08-07 10:49:47.025 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 87.0718ms
+2023-08-07 10:50:00.833 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-07 10:50:00.837 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:50:00.839 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 10:50:00.863 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-07 10:50:00.865 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-07 10:50:00.866 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-07 10:50:00.867 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 26.5099ms
+2023-08-07 10:50:00.867 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:50:00.868 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 32.0112 ms
+2023-08-07 10:50:00.869 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 36.1180ms
+2023-08-07 10:51:48.015 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-07 10:51:48.361 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-07 10:51:48.374 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-07 10:51:48.380 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-07 10:51:48.381 +05:30 [INF] Hosting environment: Development
+2023-08-07 10:51:48.383 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical
+2023-08-07 10:51:49.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-07 10:51:50.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-07 10:51:50.066 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-07 10:51:50.109 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 348.1887ms
+2023-08-07 10:51:50.136 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 70.3659ms
+2023-08-07 10:51:50.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 245.9260ms
+2023-08-07 10:51:50.460 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-07 10:51:50.841 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 381.3766ms
+2023-08-07 10:51:54.841 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-07 10:51:54.895 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 10:51:54.903 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 10:51:55.832 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-07 10:51:55.884 +05:30 [INF] User retrieved all movies details
+2023-08-07 10:51:55.890 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-07 10:51:55.911 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 1004.7731ms
+2023-08-07 10:51:55.912 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 10:51:55.915 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 1065.9986 ms
+2023-08-07 10:51:55.922 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 1080.8819ms
+2023-08-07 10:52:01.412 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - -
+2023-08-07 10:52:01.415 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:52:01.421 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 10:52:01.532 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-07 10:52:01.535 +05:30 [INF] User retrieved 3 Idiots movie's details
+2023-08-07 10:52:01.536 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-07 10:52:01.537 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 114.7683ms
+2023-08-07 10:52:01.538 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:52:01.539 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 124.3703 ms
+2023-08-07 10:52:01.541 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots - - - 200 - application/json;+charset=utf-8 128.9049ms
+2023-08-07 10:52:09.179 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots3 - -
+2023-08-07 10:52:09.183 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:52:09.183 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 10:52:09.232 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-07 10:52:09.234 +05:30 [INF] User retrieved 3 Idiots3 movie's details
+2023-08-07 10:52:09.236 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-07 10:52:09.238 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 53.7797ms
+2023-08-07 10:52:09.239 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:52:09.240 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 404 in 59.7192 ms
+2023-08-07 10:52:09.243 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=3%20Idiots3 - - - 404 - application/problem+json;+charset=utf-8 63.2655ms
+2023-08-07 10:55:37.559 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-07 10:55:37.814 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-07 10:55:37.815 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-07 10:55:37.816 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-07 10:55:37.817 +05:30 [INF] Hosting environment: Development
+2023-08-07 10:55:37.817 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical
+2023-08-07 10:55:39.376 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-07 10:55:39.630 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-07 10:55:39.631 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-07 10:55:39.632 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 255.9743ms
+2023-08-07 10:55:39.650 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 19.5277ms
+2023-08-07 10:55:39.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 48.0459ms
+2023-08-07 10:55:39.831 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-07 10:55:40.124 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 293.4972ms
+2023-08-07 10:55:42.707 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-07 10:55:42.760 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 10:55:42.768 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 10:55:43.761 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-07 10:55:43.815 +05:30 [INF] User retrieved all movies details
+2023-08-07 10:55:43.821 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-07 10:55:43.842 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 1070.9162ms
+2023-08-07 10:55:43.843 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 10:55:43.846 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 1130.5620 ms
+2023-08-07 10:55:43.854 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 1146.5509ms
+2023-08-07 10:55:51.103 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Rockstar - -
+2023-08-07 10:55:51.106 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:55:51.113 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 10:55:51.223 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-07 10:55:51.226 +05:30 [INF] User retrieved Rockstar movie's details
+2023-08-07 10:55:51.227 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-07 10:55:51.228 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 114.2171ms
+2023-08-07 10:55:51.229 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:55:51.230 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 124.3810 ms
+2023-08-07 10:55:51.231 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Rockstar - - - 200 - application/json;+charset=utf-8 128.1818ms
+2023-08-07 10:55:59.955 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Rockstar1 - -
+2023-08-07 10:55:59.958 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:55:59.959 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 10:56:00.012 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-07 10:56:00.014 +05:30 [INF] User retrieved Rockstar1 movie's details
+2023-08-07 10:56:00.015 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2023-08-07 10:56:00.017 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 56.9072ms
+2023-08-07 10:56:00.017 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 10:56:00.018 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 404 in 61.7116 ms
+2023-08-07 10:56:00.019 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Rockstar1 - - - 404 - application/problem+json;+charset=utf-8 64.0357ms
+2023-08-07 11:12:22.087 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-07 11:12:22.323 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-07 11:12:22.331 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-07 11:12:22.334 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-07 11:12:22.335 +05:30 [INF] Hosting environment: Development
+2023-08-07 11:12:22.336 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical
+2023-08-07 11:12:24.114 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-07 11:12:24.451 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-07 11:12:24.451 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-07 11:12:24.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 373.5832ms
+2023-08-07 11:12:24.507 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 56.2913ms
+2023-08-07 11:12:24.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.7650ms
+2023-08-07 11:12:24.601 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-07 11:12:24.728 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 126.9720ms
+2023-08-07 11:12:39.934 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-07 11:12:39.986 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 11:12:39.995 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 11:12:40.882 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-07 11:12:40.934 +05:30 [INF] User retrieved all movies details
+2023-08-07 11:12:40.940 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-07 11:12:40.965 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 966.3811ms
+2023-08-07 11:12:40.968 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 11:12:40.969 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 1029.4038 ms
+2023-08-07 11:12:40.976 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 1042.8722ms
+2023-08-07 11:12:55.636 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Pathaan - -
+2023-08-07 11:12:55.640 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 11:12:55.647 +05:30 [INF] Route matched with {action = "GetByName", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetByName(System.String) on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 11:12:55.756 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+WHERE [m].[MovieName] = @__name_0
+2023-08-07 11:12:55.759 +05:30 [INF] User retrieved Pathaan movie's details
+2023-08-07 11:12:55.759 +05:30 [INF] Executing OkObjectResult, writing value of type 'DemoPractical.Models.Movie'.
+2023-08-07 11:12:55.761 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetByName (DemoPractical) in 111.8558ms
+2023-08-07 11:12:55.762 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-07 11:12:55.762 +05:30 [INF] HTTP GET /api/1.0/Movie/GetByName responded 200 in 123.2389 ms
+2023-08-07 11:12:55.764 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetByName?name=Pathaan - - - 200 - application/json;+charset=utf-8 128.5153ms
+2023-08-07 11:13:24.501 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0
+2023-08-07 11:13:24.506 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-07 11:13:24.509 +05:30 [INF] Route matched with {action = "Logout", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout() on controller DemoPractical.Controllers.AccountController (DemoPractical).
+2023-08-07 11:13:24.520 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-08-07 11:13:24.523 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2023-08-07 11:13:24.524 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-08-07 11:13:24.525 +05:30 [INF] User logged out successfully
+2023-08-07 11:13:24.525 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2023-08-07 11:13:24.527 +05:30 [INF] Executed action DemoPractical.Controllers.AccountController.Logout (DemoPractical) in 15.7678ms
+2023-08-07 11:13:24.527 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.AccountController.Logout (DemoPractical)'
+2023-08-07 11:13:24.528 +05:30 [INF] HTTP POST /api/Account/Logout responded 200 in 23.2514 ms
+2023-08-07 11:13:24.529 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7293/api/Account/Logout - 0 - 200 - text/plain;+charset=utf-8 27.5310ms
+2023-08-07 11:13:39.984 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-07 11:13:39.985 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 11:13:39.985 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 11:13:40.032 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-07 11:13:40.034 +05:30 [INF] User retrieved all movies details
+2023-08-07 11:13:40.034 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-07 11:13:40.035 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 48.8863ms
+2023-08-07 11:13:40.036 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 11:13:40.037 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 52.1897 ms
+2023-08-07 11:13:40.038 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 54.8345ms
+2023-08-07 11:13:52.517 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - -
+2023-08-07 11:13:52.518 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 11:13:52.519 +05:30 [INF] Route matched with {action = "GetAll", controller = "Movie"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller DemoPractical.Controllers.MovieController (DemoPractical).
+2023-08-07 11:13:52.521 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[MovieId], [m].[Genre], [m].[Length], [m].[MovieName], [m].[PhotoPath], [m].[Rating], [m].[Year]
+FROM [Movies] AS [m]
+2023-08-07 11:13:52.522 +05:30 [INF] User retrieved all movies details
+2023-08-07 11:13:52.523 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[DemoPractical.Models.Movie, DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-07 11:13:52.524 +05:30 [INF] Executed action DemoPractical.Controllers.MovieController.GetAll (DemoPractical) in 3.941ms
+2023-08-07 11:13:52.524 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetAll (DemoPractical)'
+2023-08-07 11:13:52.525 +05:30 [INF] HTTP GET /api/1.0/Movie/GetAll responded 200 in 7.0162 ms
+2023-08-07 11:13:52.526 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7293/api/1.0/Movie/GetAll - - - 200 - application/json;+charset=utf-8 9.3356ms
+2023-08-07 11:31:52.172 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-07 11:31:52.390 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-07 11:31:52.391 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-07 11:31:52.392 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-07 11:31:52.393 +05:30 [INF] Hosting environment: Development
+2023-08-07 11:31:52.393 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical
+2023-08-07 11:31:53.382 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-07 11:31:53.593 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-07 11:31:53.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 213.3747ms
+2023-08-07 11:31:53.593 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-07 11:31:53.623 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 29.7387ms
+2023-08-07 11:31:53.649 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 56.0802ms
+2023-08-07 11:31:53.710 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-07 11:31:53.836 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 125.9244ms
+2023-08-07 11:32:02.588 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/healthCheck - -
+2023-08-07 11:32:02.640 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.HealthController.GetHealthInfo (DemoPractical)'
+2023-08-07 11:32:02.659 +05:30 [INF] Route matched with {action = "GetHealthInfo", controller = "Health"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHealthInfo() on controller DemoPractical.Controllers.HealthController (DemoPractical).
+2023-08-07 11:32:02.665 +05:30 [INF] Executed action DemoPractical.Controllers.HealthController.GetHealthInfo (DemoPractical) in 2.1205ms
+2023-08-07 11:32:02.667 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.HealthController.GetHealthInfo (DemoPractical)'
+2023-08-07 11:32:02.669 +05:30 [ERR] HTTP GET /healthCheck responded 500 in 76.5284 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService' while attempting to activate 'DemoPractical.Controllers.HealthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-08-07 11:32:02.687 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService' while attempting to activate 'DemoPractical.Controllers.HealthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-08-07 11:32:02.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/healthCheck - - - 500 - text/plain;+charset=utf-8 108.1294ms
+2023-08-07 11:32:53.442 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-07 11:32:53.661 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-07 11:32:53.662 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-07 11:32:53.663 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-07 11:32:53.664 +05:30 [INF] Hosting environment: Development
+2023-08-07 11:32:53.664 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\DemoPractical
+2023-08-07 11:32:54.730 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-07 11:32:54.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-07 11:32:54.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-07 11:32:54.946 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 217.5292ms
+2023-08-07 11:32:54.967 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 24.0411ms
+2023-08-07 11:32:54.988 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.5381ms
+2023-08-07 11:32:55.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-07 11:32:55.180 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 122.5913ms
+2023-08-07 11:33:01.178 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/healthCheck - -
+2023-08-07 11:33:01.229 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.HealthController.GetHealthInfo (DemoPractical)'
+2023-08-07 11:33:01.242 +05:30 [INF] Route matched with {action = "GetHealthInfo", controller = "Health"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetHealthInfo() on controller DemoPractical.Controllers.HealthController (DemoPractical).
+2023-08-07 11:33:22.689 +05:30 [INF] Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport
+2023-08-07 11:33:24.455 +05:30 [INF] Executing OkObjectResult, writing value of type 'Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport'.
+2023-08-07 11:33:24.479 +05:30 [INF] Executed action DemoPractical.Controllers.HealthController.GetHealthInfo (DemoPractical) in 23233.1739ms
+2023-08-07 11:33:24.482 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.HealthController.GetHealthInfo (DemoPractical)'
+2023-08-07 11:33:24.484 +05:30 [INF] HTTP GET /healthCheck responded 200 in 23300.8930 ms
+2023-08-07 11:33:24.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/healthCheck - - - 200 - application/json;+charset=utf-8 23307.5375ms

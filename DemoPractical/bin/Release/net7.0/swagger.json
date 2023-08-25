@@ -1,0 +1,474 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "DemoPractical, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Account/Login": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Account/Register": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegisterViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Account/Logout": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Account/UpdatePassword": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdatePasswordModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Account/RegisterAdmin/register-admin": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegisterViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/healthCheck": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/{v}/Movie/GetAll": {
+      "get": {
+        "tags": [
+          "Movie"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "v",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/{v}/Movie/GetByName": {
+      "get": {
+        "tags": [
+          "Movie"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "name",
+            "type": "string",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "path",
+            "name": "v",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/{v}/Movie/AddMovie": {
+      "post": {
+        "tags": [
+          "Movie"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "v",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/{v}/Movie/EditMovie": {
+      "put": {
+        "tags": [
+          "Movie"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "name",
+            "type": "string",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "path",
+            "name": "v",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/{v}/Movie/DeleteMovie": {
+      "delete": {
+        "tags": [
+          "Movie"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "name",
+            "type": "string",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "path",
+            "name": "v",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/{v}/MovieCast/GetCastByMovieName": {
+      "get": {
+        "tags": [
+          "MovieCast"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "name",
+            "type": "string",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "path",
+            "name": "v",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/MovieCast"
+            }
+          }
+        }
+      }
+    },
+    "/api/{v}/MovieCast/AddMovieCastDetails": {
+      "post": {
+        "tags": [
+          "MovieCast"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "name",
+            "type": "string",
+            "collectionFormat": "multi"
+          },
+          {
+            "in": "path",
+            "name": "v",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/MovieCast"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "LoginViewModel": {
+      "required": [
+        "email",
+        "password"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "format": "password",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Movie": {
+      "type": "object",
+      "properties": {
+        "movieId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "movieName": {
+          "type": "string"
+        },
+        "year": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "rating": {
+          "format": "double",
+          "type": "number"
+        },
+        "length": {
+          "format": "double",
+          "type": "number"
+        },
+        "genre": {
+          "type": "string"
+        },
+        "photoPath": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "MovieCast": {
+      "type": "object",
+      "properties": {
+        "movieName": {
+          "type": "string"
+        },
+        "actor": {
+          "type": "string"
+        },
+        "actress": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RegisterViewModel": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "format": "password",
+          "type": "string"
+        },
+        "confirmPassword": {
+          "format": "password",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UpdatePasswordModel": {
+      "required": [
+        "confirmNewPassword",
+        "currentPassword",
+        "newPassword"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "type": "string"
+        },
+        "currentPassword": {
+          "format": "password",
+          "minLength": 1,
+          "type": "string"
+        },
+        "newPassword": {
+          "format": "password",
+          "minLength": 1,
+          "type": "string"
+        },
+        "confirmNewPassword": {
+          "format": "password",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

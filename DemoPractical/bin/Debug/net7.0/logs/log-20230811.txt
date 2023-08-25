@@ -1,0 +1,17 @@
+2023-08-11 17:55:40.815 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-11 17:55:40.947 +05:30 [INF] Now listening on: http://localhost:5000
+2023-08-11 17:55:40.949 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-11 17:55:40.949 +05:30 [INF] Hosting environment: Production
+2023-08-11 17:55:40.950 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\MovieMania\DemoPractical\bin\Debug\net7.0
+2023-08-11 17:55:49.649 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-11 17:55:49.756 +05:30 [INF] Now listening on: http://localhost:5000
+2023-08-11 17:55:49.759 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-11 17:55:49.759 +05:30 [INF] Hosting environment: Production
+2023-08-11 17:55:49.760 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\MovieMania\DemoPractical\bin\Debug\net7.0
+2023-08-11 17:56:02.848 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - -
+2023-08-11 17:56:02.873 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-08-11 17:56:02.896 +05:30 [INF] HTTP GET / responded 404 in 23.6396 ms
+2023-08-11 17:56:02.904 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - - - 404 0 - 58.7525ms
+2023-08-11 17:56:27.076 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5000/ - -
+2023-08-11 17:56:27.080 +05:30 [INF] HTTP GET / responded 404 in 1.8946 ms
+2023-08-11 17:56:27.082 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5000/ - - - 404 0 - 5.9640ms

@@ -1,0 +1,58 @@
+2023-08-25 15:15:36.174 +05:30 [INF] User profile is available. Using 'C:\Users\parthiv\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-25 15:15:36.575 +05:30 [INF] Now listening on: https://localhost:7293
+2023-08-25 15:15:36.588 +05:30 [INF] Now listening on: http://localhost:5231
+2023-08-25 15:15:36.591 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-25 15:15:36.592 +05:30 [INF] Hosting environment: Development
+2023-08-25 15:15:36.593 +05:30 [INF] Content root path: C:\Users\parthiv\Documents\Parthiv\ASP .NET Core\MovieMania\DemoPractical
+2023-08-25 15:15:38.121 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/index.html - -
+2023-08-25 15:15:38.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/swagger-ui.css - -
+2023-08-25 15:15:38.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/swagger-ui-bundle.js - -
+2023-08-25 15:15:38.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_vs/browserLink - -
+2023-08-25 15:15:38.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - -
+2023-08-25 15:15:38.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/swagger-ui-standalone-preset.js - -
+2023-08-25 15:15:38.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/index.html - - - 200 - text/html;charset=utf-8 437.6501ms
+2023-08-25 15:15:38.571 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_framework/aspnetcore-browser-refresh.js - - - 200 12358 application/javascript;+charset=utf-8 28.5869ms
+2023-08-25 15:15:38.579 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2023-08-25 15:15:38.579 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2023-08-25 15:15:38.579 +05:30 [INF] The file /swagger-ui.css was not modified
+2023-08-25 15:15:38.580 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/swagger-ui-bundle.js - - - 304 - text/javascript 37.7484ms
+2023-08-25 15:15:38.580 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/swagger-ui-standalone-preset.js - - - 304 - text/javascript 36.1719ms
+2023-08-25 15:15:38.581 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/swagger-ui.css - - - 304 - text/css 38.1292ms
+2023-08-25 15:15:38.621 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.0060ms
+2023-08-25 15:15:38.789 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - -
+2023-08-25 15:15:38.888 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 98.6519ms
+2023-08-25 15:15:53.803 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7293/api/1/Movie/GetByName?name=3%20Idiots - -
+2023-08-25 15:15:53.860 +05:30 [INF] Executing endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-25 15:15:53.866 +05:30 [INF] Executed endpoint 'DemoPractical.Controllers.MovieController.GetByName (DemoPractical)'
+2023-08-25 15:15:53.868 +05:30 [ERR] HTTP GET /api/1/Movie/GetByName responded 500 in 59.3408 ms
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'DemoPractical.Controllers.MovieController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-08-25 15:15:53.888 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'DemoPractical.Controllers.MovieController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-08-25 15:15:53.895 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7293/api/1/Movie/GetByName?name=3%20Idiots - - - 500 - text/plain;+charset=utf-8 92.5202ms
